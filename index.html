@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webitya Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />                                                                                                                                                                                                              
+</head>
+<body class="bg-gray-100">
+   <nav class="bg-white shadow fixed top-0 w-full">
+        <div class="px-4">
+            <div class=" flex justify-between items-center  h-16">
+                <a href="#" class="text-2xl">Webitya Blog</a>
+                <button id="menuBtn" class="p-2 rounded-lg text-gray-500 hover:text-gray-700 md:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div id="menu" class="md:flex hidden gap-x-3 font-semibold">
+                     <a href="#/"class="text-gray-800 hover:text-blue-500 menuLink">Home</a>
+                     <a href="#/about-us"class="text-gray-800 hover:text-blue-500 menuLink">About Us</a>
+                     <a href="#/services"class="text-gray-800 hover:text-blue-500 menuLink">Services</a>
+                     <a href="#/login"class="text-gray-800 hover:text-blue-500 menuLink">Login</a>
+                     <a href="#/register"class="text-gray-800 hover:text-blue-500 menuLink">Register</a>
+                </div>
+            </div>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden pl-4 animate__animated animate__fadeIn transition ease-in-out">
+            <a href="#/"class="text-gray-800 hover:text-blue-500 py-2 block menuLink">Home</a>
+            <a href="#/about-us"class="text-gray-800 hover:text-blue-500 py-2 block menuLink">About Us</a>
+            <a href="#/services"class="text-gray-800 hover:text-blue-500 py-2 block menuLink">Services</a>
+            <a href="#/login"class="text-gray-800 hover:text-blue-500 py-2 block menuLink">Login</a>
+            <a href="#/register"class="text-gray-800 hover:text-blue-500 py-2 block menuLink">Register</a>
+       </div>
+   </nav>
+   <!-- ==========CONTENT============= -->
+   <div class="min-h-[500px] mt-[70px] p-2 " id="bodyDiv">
+         <div class="flex flex-col items-center min-h-[400px] justify-center">
+            <h1 class="text-5xl text-orange-500 mb-2">404</h1>
+            <p class="mb-4">PAGE NOT FOUND</p>
+            <a href="/"><button class="bg-blue-300 text-xl border-2 border-black p-2 rounded-lg">Go to Homepage</button></a>
+
+         </div>
+   </div>
+
+   <!-- ============FOOTER================== -->
+    <footer class="py-20 bg-black">
+        <h1 class="text-4xl text-center text-white">Footer</h1>
+    </footer>
+
+   <script src="./js/index.js" type="module"></script>
+</body>
+</html>
