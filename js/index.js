@@ -26,11 +26,15 @@ menuBtn.onclick=()=>{
 }
 // END CONTROL MENU ON MOBILE
 
-import routes from "./module.js"
+import routes from "../module/route.service.js"
+import functionService from "../module/function.service.js"
 import { NotFound } from "../pages/notfound.js";
 const handleRouteChange=()=>{
       const location1=window.location.hash.replace("#","") || "/";
-      bodyDiv.innerHTML=routes[location1] || NotFound
+      bodyDiv.innerHTML=routes[location1] || NotFound;
+      if(location1=="/register"){
+        functionService.registerFunc();
+      }
 }
 handleRouteChange()
 window.onhashchange=()=>{
